@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빽다방</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/common.js" defer></script>
+    <!-- plugin css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- plugin js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="#"><img src="./images/logo.png" alt="빽다방"></a></h1>
+            <div class="gnb">
+                <ul class="top_sns">
+                    <li><a href="#">더본코리아</a></li>
+                    <li><a href="#"><img src="./images/facebook-ico.png" alt="facekoob"></a></li>
+                    <li><a href="#"><img src="./images/insta-ico.png" alt="insta"></a></li>
+                </ul>
+                <ul class="gnb_list">
+                    <li>
+                        <a href="#">빽다방</a>
+                        <ul class="sub">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">빽다방 소개</a></li>
+                            <li><a href="#">맴버십 / 앱 소개</a></li>
+                            <li><a href="#">커피 이야기</a></li>
+                            <li><a href="#">교육 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                        <ul class="sub">
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">아이스크림/디저트</a></li>
+                            <li><a href="#">빽스치노</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                        <ul class="sub">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">친절 우수매장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub">
+                            <li><a href="#">커피 클래스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">매장안내</a>
+                        <ul class="sub">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">창업안내</a>
+                        <ul class="sub">
+                            <li><a href="#">왜 빽다방인가요?</a></li>
+                            <li><a href="#">창업상담 신청</a></li>
+                            <li><a href="#">창업절차 및 조건</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객의소리</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sec01">
+            <div class="swiper-container sec01_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
+        <section class="sec02">
+            <div class="sec02_wrap">
+                <ul class="sec02_list">
+                    <li>
+                        <div class="txt">
+                            <h2 class="col1">
+                                <span>PAIK’S COFFEE</span>
+                                <span>STORY</span>
+                            </h2>
+                            <p>균형잡힌 바디감으로 긴 여운을 남기는 빽다방 커피를 만나보세요</p>
+                        </div>
+                        <button href="#" class="link_btn"></button>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <h2 class="col5">
+                                <span>PAIK’S BRAND</span>
+                                <span>STORY</span>
+                            </h2>
+                            <p class="col5">합리적인 가격으로 만나는 맛있고 든든한 빽다방</p>
+                        </div>
+                        <p><button href="#" class="link_btn"></button></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec03">
+            <div class="sec03_wrap">
+                <div class="sec03_content">
+                    <div class="txt">
+                        <h2 class="col2">
+                            <span>FRESH</span>
+                            <span>COFFEE</span>
+                        </h2>
+                        <p>균형잡힌 바디감으로 긴 여운을 남기는 빽다방 커피를 만나보세요</p>
+                    </div>
+                    <p><button href="#" class="link_btn"></button></p>
+                </div>
+            </div>
+        </section>
+        <section class="sec04">
+            <div class="sec04_wrap">
+                <ul class="sec04_list">
+                    <li>
+                        <div class="txt">
+                            <h2 class="col1">
+                                <span>VARIOUS</span>
+                                <span>BEVERAGE</span>
+                            </h2>
+                            <p>
+                                <span>에이드, 티, 주스 등 취향대로</span>
+                                <span>골라 먹는 즐거움!</span>
+                            </p>
+                        </div>
+                        <button href="#" class="link_btn"></button>
+                    </li>
+                    <li>
+                        <div class="txt">
+                            <h2 class="col4">
+                                <span>SWEET</span>
+                                <span>PAIK'S CCINO</span>
+                            </h2>
+                            <p>
+                                <span>달콤 시원한 빽다방</span>
+                                <span>시그니처 메뉴!</span>
+                            </p>
+                        </div>
+                        <p><button href="#" class="link_btn"></button></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sec05">
+            <div class="sec05_wrap">
+                <ul>
+                    <li>
+                        <div class="store_box">
+                            <div class="txt">
+                                <h2>STORE</h2>
+                                <p>원하시는 지역의 매장을 검색해보세요!</p>
+                            </div>
+                        </div>
+                        <div class="franchise_box">
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
