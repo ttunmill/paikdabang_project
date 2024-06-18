@@ -8,7 +8,8 @@ const swiper1 = new Swiper(".sec01_swiper", {
     pagination: {
         el: /* ".swiper-pagination", */'.sec01_swiper .swiper-pagination',
         clickable: true,
-        type: 'fraction',
+        // type: 'fraction',
+        type: 'bullets',
     },
     navigation: {
         nextEl:".swiper-button-next", 
