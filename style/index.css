@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
-html, body {overflow-x: hidden;}
+html, body {overflow: visible;}
 .txt h2 {
     display: flex;
     flex-direction: column;
@@ -64,6 +64,8 @@ section div[class *= wrap] {
 
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
 }
@@ -124,6 +126,7 @@ main .sec01 {margin-top: 125px;}
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .sec01 .sec01_swiper .swiper-wrapper .slide1 {background-image: url("../images/main_visual_1.jpg");}
 .sec01 .sec01_swiper .swiper-wrapper .slide2 {background-image: url("../images/main_visual_2.jpg");}
