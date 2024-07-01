@@ -1,0 +1,26 @@
+@media screen and (max-width: 1180px) {
+    nav {
+        height: 70px;
+        padding: 0 16px;
+    }
+    nav h1 a {
+        display: inline-block;
+        width: 80%;
+    }
+    nav h1 a img {width: 100%;}
+    nav .gnb {
+        align-items: flex-end;
+    }
+    nav .gnb .top_sns,
+    nav .gnb .gnb_list {
+        display: none;
+    }
+    nav .gnb > p {
+        display: block;
+        width: 36px;
+    }
+    nav .gnb > p img {width: 100%;}
+    main .sec01 {
+        margin-top: 70px;
+    }
+}
