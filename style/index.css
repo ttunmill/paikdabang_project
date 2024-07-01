@@ -5,7 +5,10 @@
     font-weight: normal;
     font-style: normal;
 }
-html, body {overflow-x: hidden;}
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 .txt h2 {
     display: flex;
     flex-direction: column;
@@ -82,7 +85,6 @@ section div[class *= wrap] {
 .col4 {color: #FFE600;}
 .col5 {color: #fff}
 /* ============= 네비게이션 */
-
 header {
     position: fixed;
     top: 0;
@@ -291,10 +293,11 @@ footer {
     padding: 50px 0;
     border-top: 3px solid #ffe600;
 }
-footer .ft_wrap {
-    max-width: 1440px;
+footer .ft_wrap {margin-bottom: 30px;}
+footer .ft_wrap h1 {
+    text-align: center;
+    margin: 0 auto;
 }
-footer .ft_wrap h1 {text-align: center;}
 footer .ft_wrap h1 a {
     display: inline-block;
     width: 200px;
@@ -326,6 +329,12 @@ footer address .ft_list li span:last-child:after {display: none;}
 footer address .copyright {
     margin-top: 30px;
     text-align: center;
+}
+/* ============ top_btn */
+.top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
 }
 @media screen and (max-width: 1180px) {
     nav {

@@ -1,0 +1,83 @@
+/* ============= 네비게이션 */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+nav > * {font-size: 0.875rem;}
+nav {
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    background-color: #fff;
+}
+nav .gnb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+nav .gnb > p {
+    display: none;
+}
+nav .gnb .top_sns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+nav .gnb .top_sns li:first-child {
+    display: flex;
+    align-items: center;
+}
+nav .gnb .top_sns li:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #aaa;
+    margin-left: 1rem;
+}
+nav .gnb .top_sns li:first-child a {width: 100%;}
+nav .gnb .top_sns li a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+nav .gnb .top_sns li a img {width: 100%;}
+nav .gnb .gnb_list {
+    display: flex;
+    justify-content: center;
+}
+nav .gnb .gnb_list > li {padding: 0 40px;}
+@media screen and (max-width: 1180px) {
+    nav {
+        height: 70px;
+        padding: 0 16px;
+    }
+    nav h1 a {
+        display: inline-block;
+        width: 80%;
+    }
+    nav h1 a img {width: 100%;}
+    nav .gnb {
+        align-items: flex-end;
+    }
+    nav .gnb .top_sns,
+    nav .gnb .gnb_list {
+        display: none;
+    }
+    nav .gnb > p {
+        display: block;
+        width: 36px;
+    }
+    nav .gnb > p img {width: 100%;}
+    main .sec01 {
+        margin-top: 70px;
+    }
+}
